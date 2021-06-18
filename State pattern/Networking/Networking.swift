@@ -11,7 +11,6 @@ final class Networking {
     
     @discardableResult
     static func request<T: Decodable>(_ urlRequest: URLRequestConvertible,
-                                      failureCodes: [Int] = [],
                                       result: @escaping (Result<T, Networking.Error>) -> Void) -> Request {
         return AF.request(urlRequest).responseData { (response) in
             guard let code = response.response?.statusCode,
