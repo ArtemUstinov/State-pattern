@@ -8,10 +8,13 @@
 import UIKit
 
 protocol NotebookViewDelegate: ViewDelegateProtocol {
-    
+    func successfulLoadUsers(_ notebookViewPresenter: NotebookViewPresetnerInterface, users: [User])
 }
 
 final class NotebookViewController: NibViewController<NotebookContentView> {
+    
+    //MARK: - Private properties:
+    private lazy var state = State.state(.empty, viewController: self)
     
     private let presenter: NotebookViewPresetnerInterface = NotebookViewPresenter()
     
@@ -23,4 +26,18 @@ final class NotebookViewController: NibViewController<NotebookContentView> {
     
 }
 
-extension NotebookViewController: NotebookViewDelegate { }
+//MARK: - NotebookViewDelegate:
+extension NotebookViewController: NotebookViewDelegate {
+    
+    func successfulLoadUsers(_ notebookViewPresenter: NotebookViewPresetnerInterface, users: [User]) {
+        contentView.activityIndicator.stopAnimating()
+        let kind: State.Kind = users.isEmpty ? .empty : .showingData(users)
+        state = State.state(kind, viewController: self)
+        self.state.enter()
+    }
+    
+    func displayError(_ error: Error) {
+        let alertController = AlertControllerFactory.controller(ofType: .error(error: error))
+        present(alertController, animated: true)
+    }
+}

@@ -15,6 +15,20 @@
 		96256725267F39E300DA8901 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256724267F39E300DA8901 /* AppCoordinator.swift */; };
 		96256735267F472F00DA8901 /* NotebookTableSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256734267F472F00DA8901 /* NotebookTableSections.swift */; };
 		96256739267F47B600DA8901 /* NotebookViewController + State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256738267F47B600DA8901 /* NotebookViewController + State.swift */; };
+		9625673E267F513100DA8901 /* UITableView +.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625673D267F513100DA8901 /* UITableView +.swift */; };
+		96256741267F51C700DA8901 /* UITableViewCell +.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256740267F51C700DA8901 /* UITableViewCell +.swift */; };
+		96256746267F54AC00DA8901 /* BasicNotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256745267F54AB00DA8901 /* BasicNotebookTableViewCell.swift */; };
+		9625674D267F550200DA8901 /* BasicNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625674C267F550200DA8901 /* BasicNotebookTableViewCell.xib */; };
+		96256751267F56EB00DA8901 /* UISuperEllipseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256750267F56EB00DA8901 /* UISuperEllipseImageView.swift */; };
+		96256757267F58C500DA8901 /* BasicNotebookTableViewCellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256756267F58C500DA8901 /* BasicNotebookTableViewCellInterface.swift */; };
+		9625675A267F596C00DA8901 /* BasicNotebookCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256759267F596C00DA8901 /* BasicNotebookCellConfigurator.swift */; };
+		9625675E267F5C5700DA8901 /* EmptyStateNotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625675D267F5C5700DA8901 /* EmptyStateNotebookTableViewCell.swift */; };
+		96256762267F5C9C00DA8901 /* EmptyStateNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96256761267F5C9C00DA8901 /* EmptyStateNotebookTableViewCell.xib */; };
+		96256766267F5D9000DA8901 /* ErrorStateNotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256765267F5D9000DA8901 /* ErrorStateNotebookTableViewCell.swift */; };
+		9625676A267F5E5800DA8901 /* ErrorStateNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96256769267F5E5800DA8901 /* ErrorStateNotebookTableViewCell.xib */; };
+		9625676E267F5EF800DA8901 /* LoadingStateNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9625676D267F5EF800DA8901 /* LoadingStateNotebookTableViewCell.xib */; };
+		96256771267F5EFF00DA8901 /* LoadingStateNotebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256770267F5EFF00DA8901 /* LoadingStateNotebookTableViewCell.swift */; };
+		96256776267F639400DA8901 /* AlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256775267F639400DA8901 /* AlertControllerFactory.swift */; };
 		96D2EDEA267CFF5C00DF5375 /* NibViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDE9267CFF5C00DF5375 /* NibViewInterface.swift */; };
 		96D2EDEE267D00EE00DF5375 /* ViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDED267D00EE00DF5375 /* ViewControllerInterface.swift */; };
 		96D2EDF2267D1D8800DF5375 /* NibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDF1267D1D8800DF5375 /* NibViewController.swift */; };
@@ -46,6 +60,20 @@
 		96256724267F39E300DA8901 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		96256734267F472F00DA8901 /* NotebookTableSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSections.swift; sourceTree = "<group>"; };
 		96256738267F47B600DA8901 /* NotebookViewController + State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotebookViewController + State.swift"; sourceTree = "<group>"; };
+		9625673D267F513100DA8901 /* UITableView +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView +.swift"; sourceTree = "<group>"; };
+		96256740267F51C700DA8901 /* UITableViewCell +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell +.swift"; sourceTree = "<group>"; };
+		96256745267F54AB00DA8901 /* BasicNotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNotebookTableViewCell.swift; sourceTree = "<group>"; };
+		9625674C267F550200DA8901 /* BasicNotebookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicNotebookTableViewCell.xib; sourceTree = "<group>"; };
+		96256750267F56EB00DA8901 /* UISuperEllipseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISuperEllipseImageView.swift; sourceTree = "<group>"; };
+		96256756267F58C500DA8901 /* BasicNotebookTableViewCellInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNotebookTableViewCellInterface.swift; sourceTree = "<group>"; };
+		96256759267F596C00DA8901 /* BasicNotebookCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNotebookCellConfigurator.swift; sourceTree = "<group>"; };
+		9625675D267F5C5700DA8901 /* EmptyStateNotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateNotebookTableViewCell.swift; sourceTree = "<group>"; };
+		96256761267F5C9C00DA8901 /* EmptyStateNotebookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateNotebookTableViewCell.xib; sourceTree = "<group>"; };
+		96256765267F5D9000DA8901 /* ErrorStateNotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateNotebookTableViewCell.swift; sourceTree = "<group>"; };
+		96256769267F5E5800DA8901 /* ErrorStateNotebookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorStateNotebookTableViewCell.xib; sourceTree = "<group>"; };
+		9625676D267F5EF800DA8901 /* LoadingStateNotebookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingStateNotebookTableViewCell.xib; sourceTree = "<group>"; };
+		96256770267F5EFF00DA8901 /* LoadingStateNotebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateNotebookTableViewCell.swift; sourceTree = "<group>"; };
+		96256775267F639400DA8901 /* AlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerFactory.swift; sourceTree = "<group>"; };
 		96D2EDE9267CFF5C00DF5375 /* NibViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewInterface.swift; sourceTree = "<group>"; };
 		96D2EDED267D00EE00DF5375 /* ViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInterface.swift; sourceTree = "<group>"; };
 		96D2EDF1267D1D8800DF5375 /* NibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewController.swift; sourceTree = "<group>"; };
@@ -106,10 +134,13 @@
 				96D2EDE7267CFF3A00DF5375 /* Base */,
 				9625671C267F36B700DA8901 /* Coordinators */,
 				96D2EE14267D337200DF5375 /* Entities */,
+				9625673B267F50FC00DA8901 /* Extensions */,
+				96256774267F637700DA8901 /* Factories */,
 				96D2EE01267D260500DF5375 /* Networking */,
 				9611DBE3267CFB8C0025A758 /* Resources */,
 				96D2EDFA267D21DD00DF5375 /* Screen */,
 				96D2EE0E267D2E1F00DF5375 /* Service */,
+				9625674F267F56A000DA8901 /* UIEntities */,
 			);
 			path = "State pattern";
 			sourceTree = "<group>";
@@ -161,6 +192,7 @@
 			children = (
 				96D2EE2E267D3C7800DF5375 /* NotebookContentView.swift */,
 				96D2EE31267D3C7800DF5375 /* NotebookContentView.xib */,
+				96256744267F548F00DA8901 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +211,96 @@
 				96256738267F47B600DA8901 /* NotebookViewController + State.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		9625673B267F50FC00DA8901 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9625673C267F511100DA8901 /* UI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9625673C267F511100DA8901 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9625673D267F513100DA8901 /* UITableView +.swift */,
+				96256740267F51C700DA8901 /* UITableViewCell +.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		96256744267F548F00DA8901 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				96256753267F589400DA8901 /* Protocols */,
+				96256755267F58A400DA8901 /* Configurators */,
+				9625675C267F5BF500DA8901 /* Empty */,
+				96256764267F5D7300DA8901 /* Error */,
+				9625676C267F5ED900DA8901 /* Loading */,
+				96256745267F54AB00DA8901 /* BasicNotebookTableViewCell.swift */,
+				9625674C267F550200DA8901 /* BasicNotebookTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9625674F267F56A000DA8901 /* UIEntities */ = {
+			isa = PBXGroup;
+			children = (
+				96256750267F56EB00DA8901 /* UISuperEllipseImageView.swift */,
+			);
+			path = UIEntities;
+			sourceTree = "<group>";
+		};
+		96256753267F589400DA8901 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				96256756267F58C500DA8901 /* BasicNotebookTableViewCellInterface.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		96256755267F58A400DA8901 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				96256759267F596C00DA8901 /* BasicNotebookCellConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		9625675C267F5BF500DA8901 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				9625675D267F5C5700DA8901 /* EmptyStateNotebookTableViewCell.swift */,
+				96256761267F5C9C00DA8901 /* EmptyStateNotebookTableViewCell.xib */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
+		96256764267F5D7300DA8901 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				96256765267F5D9000DA8901 /* ErrorStateNotebookTableViewCell.swift */,
+				96256769267F5E5800DA8901 /* ErrorStateNotebookTableViewCell.xib */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9625676C267F5ED900DA8901 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				96256770267F5EFF00DA8901 /* LoadingStateNotebookTableViewCell.swift */,
+				9625676D267F5EF800DA8901 /* LoadingStateNotebookTableViewCell.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		96256774267F637700DA8901 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				96256775267F639400DA8901 /* AlertControllerFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		96D2EDE7267CFF3A00DF5375 /* Base */ = {
@@ -357,8 +479,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9611DBD7267CF8B30025A758 /* LaunchScreen.storyboard in Resources */,
+				9625676A267F5E5800DA8901 /* ErrorStateNotebookTableViewCell.xib in Resources */,
+				96256762267F5C9C00DA8901 /* EmptyStateNotebookTableViewCell.xib in Resources */,
+				9625674D267F550200DA8901 /* BasicNotebookTableViewCell.xib in Resources */,
 				96D2EE35267D3C7800DF5375 /* NotebookContentView.xib in Resources */,
 				9611DBD4267CF8B30025A758 /* Assets.xcassets in Resources */,
+				9625676E267F5EF800DA8901 /* LoadingStateNotebookTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,13 +537,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96256741267F51C700DA8901 /* UITableViewCell +.swift in Sources */,
 				96D2EE32267D3C7800DF5375 /* NotebookContentView.swift in Sources */,
 				96D2EE34267D3C7800DF5375 /* NotebookViewController.swift in Sources */,
 				96D2EE0B267D2D1600DF5375 /* Networking + Error.swift in Sources */,
 				96D2EDF6267D1DFC00DF5375 /* ViewController.swift in Sources */,
 				96D2EDEE267D00EE00DF5375 /* ViewControllerInterface.swift in Sources */,
 				96D2EE33267D3C7800DF5375 /* NotebookViewPresenter.swift in Sources */,
+				96256751267F56EB00DA8901 /* UISuperEllipseImageView.swift in Sources */,
 				96256739267F47B600DA8901 /* NotebookViewController + State.swift in Sources */,
+				96256766267F5D9000DA8901 /* ErrorStateNotebookTableViewCell.swift in Sources */,
+				96256757267F58C500DA8901 /* BasicNotebookTableViewCellInterface.swift in Sources */,
 				96D2EDEA267CFF5C00DF5375 /* NibViewInterface.swift in Sources */,
 				96256735267F472F00DA8901 /* NotebookTableSections.swift in Sources */,
 				96256722267F37E100DA8901 /* NoteBookCoordinator.swift in Sources */,
@@ -428,10 +558,16 @@
 				9611DBCB267CF8B30025A758 /* AppDelegate.swift in Sources */,
 				9625671F267F371400DA8901 /* Coordinator.swift in Sources */,
 				96D2EE03267D261700DF5375 /* Networking.swift in Sources */,
+				96256746267F54AC00DA8901 /* BasicNotebookTableViewCell.swift in Sources */,
 				96256725267F39E300DA8901 /* AppCoordinator.swift in Sources */,
 				96D2EE38267D3D5400DF5375 /* ViewDelegateProtocol.swift in Sources */,
 				96D2EE20267D367800DF5375 /* RouterInterface.swift in Sources */,
+				9625675E267F5C5700DA8901 /* EmptyStateNotebookTableViewCell.swift in Sources */,
+				9625675A267F596C00DA8901 /* BasicNotebookCellConfigurator.swift in Sources */,
+				96256776267F639400DA8901 /* AlertControllerFactory.swift in Sources */,
+				9625673E267F513100DA8901 /* UITableView +.swift in Sources */,
 				96D2EE16267D339A00DF5375 /* User.swift in Sources */,
+				96256771267F5EFF00DA8901 /* LoadingStateNotebookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
