@@ -13,6 +13,8 @@
 		9625671F267F371400DA8901 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625671E267F371400DA8901 /* Coordinator.swift */; };
 		96256722267F37E100DA8901 /* NoteBookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256721267F37E100DA8901 /* NoteBookCoordinator.swift */; };
 		96256725267F39E300DA8901 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256724267F39E300DA8901 /* AppCoordinator.swift */; };
+		96256735267F472F00DA8901 /* NotebookTableSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256734267F472F00DA8901 /* NotebookTableSections.swift */; };
+		96256739267F47B600DA8901 /* NotebookViewController + State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256738267F47B600DA8901 /* NotebookViewController + State.swift */; };
 		96D2EDEA267CFF5C00DF5375 /* NibViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDE9267CFF5C00DF5375 /* NibViewInterface.swift */; };
 		96D2EDEE267D00EE00DF5375 /* ViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDED267D00EE00DF5375 /* ViewControllerInterface.swift */; };
 		96D2EDF2267D1D8800DF5375 /* NibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDF1267D1D8800DF5375 /* NibViewController.swift */; };
@@ -42,6 +44,8 @@
 		9625671E267F371400DA8901 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		96256721267F37E100DA8901 /* NoteBookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBookCoordinator.swift; sourceTree = "<group>"; };
 		96256724267F39E300DA8901 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		96256734267F472F00DA8901 /* NotebookTableSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookTableSections.swift; sourceTree = "<group>"; };
+		96256738267F47B600DA8901 /* NotebookViewController + State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotebookViewController + State.swift"; sourceTree = "<group>"; };
 		96D2EDE9267CFF5C00DF5375 /* NibViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewInterface.swift; sourceTree = "<group>"; };
 		96D2EDED267D00EE00DF5375 /* ViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInterface.swift; sourceTree = "<group>"; };
 		96D2EDF1267D1D8800DF5375 /* NibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		9625672B267F444000DA8901 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				96256737267F47A700DA8901 /* State */,
 				96D2EE30267D3C7800DF5375 /* NotebookViewController.swift */,
 			);
 			path = Controller;
@@ -158,6 +163,22 @@
 				96D2EE31267D3C7800DF5375 /* NotebookContentView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		96256733267F46F300DA8901 /* TableEntities */ = {
+			isa = PBXGroup;
+			children = (
+				96256734267F472F00DA8901 /* NotebookTableSections.swift */,
+			);
+			path = TableEntities;
+			sourceTree = "<group>";
+		};
+		96256737267F47A700DA8901 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				96256738267F47B600DA8901 /* NotebookViewController + State.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 		96D2EDE7267CFF3A00DF5375 /* Base */ = {
@@ -191,6 +212,7 @@
 		96D2EDFA267D21DD00DF5375 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				96256733267F46F300DA8901 /* TableEntities */,
 				9625672B267F444000DA8901 /* Controller */,
 				9625672C267F444600DA8901 /* Presenter */,
 				9625672E267F444B00DA8901 /* View */,
@@ -395,7 +417,9 @@
 				96D2EDF6267D1DFC00DF5375 /* ViewController.swift in Sources */,
 				96D2EDEE267D00EE00DF5375 /* ViewControllerInterface.swift in Sources */,
 				96D2EE33267D3C7800DF5375 /* NotebookViewPresenter.swift in Sources */,
+				96256739267F47B600DA8901 /* NotebookViewController + State.swift in Sources */,
 				96D2EDEA267CFF5C00DF5375 /* NibViewInterface.swift in Sources */,
+				96256735267F472F00DA8901 /* NotebookTableSections.swift in Sources */,
 				96256722267F37E100DA8901 /* NoteBookCoordinator.swift in Sources */,
 				96D2EE11267D2E3500DF5375 /* LogService.swift in Sources */,
 				96D2EDF2267D1D8800DF5375 /* NibViewController.swift in Sources */,
