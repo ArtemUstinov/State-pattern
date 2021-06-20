@@ -8,12 +8,12 @@
 import Foundation
 import Alamofire
 
-enum NoteBookRouter {
+enum NotebookRouter {
     
     case user
 }
 
-extension NoteBookRouter: RouterInterface {
+extension NotebookRouter: RouterInterface {
     
     var method: HTTPMethod {
         switch self {

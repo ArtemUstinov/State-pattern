@@ -11,5 +11,4 @@ struct User: Decodable {
     
     let name: String?
     let username: String?
-    
 }

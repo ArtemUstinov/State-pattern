@@ -38,5 +38,4 @@ extension Networking.Error: LocalizedError {
             return "Internal server error"
         }
     }
-    
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct NetworkingConstants {
-        
+    
     static let baseURL = URL(string: "https://jsonplaceholder.typicode.com")!
     
 }
