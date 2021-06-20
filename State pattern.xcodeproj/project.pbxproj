@@ -10,6 +10,9 @@
 		9611DBCB267CF8B30025A758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611DBCA267CF8B30025A758 /* AppDelegate.swift */; };
 		9611DBD4267CF8B30025A758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9611DBD3267CF8B30025A758 /* Assets.xcassets */; };
 		9611DBD7267CF8B30025A758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9611DBD5267CF8B30025A758 /* LaunchScreen.storyboard */; };
+		9625671F267F371400DA8901 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625671E267F371400DA8901 /* Coordinator.swift */; };
+		96256722267F37E100DA8901 /* NoteBookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256721267F37E100DA8901 /* NoteBookCoordinator.swift */; };
+		96256725267F39E300DA8901 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256724267F39E300DA8901 /* AppCoordinator.swift */; };
 		96D2EDEA267CFF5C00DF5375 /* NibViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDE9267CFF5C00DF5375 /* NibViewInterface.swift */; };
 		96D2EDEE267D00EE00DF5375 /* ViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDED267D00EE00DF5375 /* ViewControllerInterface.swift */; };
 		96D2EDF2267D1D8800DF5375 /* NibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EDF1267D1D8800DF5375 /* NibViewController.swift */; };
@@ -21,10 +24,10 @@
 		96D2EE1B267D35F600DF5375 /* NoteBookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE1A267D35F600DF5375 /* NoteBookRouter.swift */; };
 		96D2EE20267D367800DF5375 /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE1F267D367800DF5375 /* RouterInterface.swift */; };
 		96D2EE2A267D398600DF5375 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE29267D398600DF5375 /* NetworkingConstants.swift */; };
-		96D2EE32267D3C7800DF5375 /* NoteBookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE2E267D3C7800DF5375 /* NoteBookContentView.swift */; };
-		96D2EE33267D3C7800DF5375 /* NoteBookViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE2F267D3C7800DF5375 /* NoteBookViewPresenter.swift */; };
-		96D2EE34267D3C7800DF5375 /* NoteBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE30267D3C7800DF5375 /* NoteBookViewController.swift */; };
-		96D2EE35267D3C7800DF5375 /* NoteBookContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D2EE31267D3C7800DF5375 /* NoteBookContentView.xib */; };
+		96D2EE32267D3C7800DF5375 /* NotebookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE2E267D3C7800DF5375 /* NotebookContentView.swift */; };
+		96D2EE33267D3C7800DF5375 /* NotebookViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE2F267D3C7800DF5375 /* NotebookViewPresenter.swift */; };
+		96D2EE34267D3C7800DF5375 /* NotebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE30267D3C7800DF5375 /* NotebookViewController.swift */; };
+		96D2EE35267D3C7800DF5375 /* NotebookContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D2EE31267D3C7800DF5375 /* NotebookContentView.xib */; };
 		96D2EE38267D3D5400DF5375 /* ViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2EE37267D3D5400DF5375 /* ViewDelegateProtocol.swift */; };
 		A0E09C2B79F625C9AB874A1E /* Pods_State_pattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4AE59BDFD222838D7FD858 /* Pods_State_pattern.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		9611DBD3267CF8B30025A758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9611DBD6267CF8B30025A758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9611DBD8267CF8B30025A758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9625671E267F371400DA8901 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		96256721267F37E100DA8901 /* NoteBookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBookCoordinator.swift; sourceTree = "<group>"; };
+		96256724267F39E300DA8901 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		96D2EDE9267CFF5C00DF5375 /* NibViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewInterface.swift; sourceTree = "<group>"; };
 		96D2EDED267D00EE00DF5375 /* ViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInterface.swift; sourceTree = "<group>"; };
 		96D2EDF1267D1D8800DF5375 /* NibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibViewController.swift; sourceTree = "<group>"; };
@@ -47,10 +53,10 @@
 		96D2EE1A267D35F600DF5375 /* NoteBookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBookRouter.swift; sourceTree = "<group>"; };
 		96D2EE1F267D367800DF5375 /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		96D2EE29267D398600DF5375 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
-		96D2EE2E267D3C7800DF5375 /* NoteBookContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBookContentView.swift; sourceTree = "<group>"; };
-		96D2EE2F267D3C7800DF5375 /* NoteBookViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBookViewPresenter.swift; sourceTree = "<group>"; };
-		96D2EE30267D3C7800DF5375 /* NoteBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteBookViewController.swift; sourceTree = "<group>"; };
-		96D2EE31267D3C7800DF5375 /* NoteBookContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteBookContentView.xib; sourceTree = "<group>"; };
+		96D2EE2E267D3C7800DF5375 /* NotebookContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookContentView.swift; sourceTree = "<group>"; };
+		96D2EE2F267D3C7800DF5375 /* NotebookViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookViewPresenter.swift; sourceTree = "<group>"; };
+		96D2EE30267D3C7800DF5375 /* NotebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookViewController.swift; sourceTree = "<group>"; };
+		96D2EE31267D3C7800DF5375 /* NotebookContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotebookContentView.xib; sourceTree = "<group>"; };
 		96D2EE37267D3D5400DF5375 /* ViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegateProtocol.swift; sourceTree = "<group>"; };
 		A63D983E3491ECAAAD9FAB68 /* Pods-State pattern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-State pattern.release.xcconfig"; path = "Target Support Files/Pods-State pattern/Pods-State pattern.release.xcconfig"; sourceTree = "<group>"; };
 		EB4AE59BDFD222838D7FD858 /* Pods_State_pattern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_State_pattern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,9 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				9611DBCA267CF8B30025A758 /* AppDelegate.swift */,
+				96256724267F39E300DA8901 /* AppCoordinator.swift */,
 				9611DBD8267CF8B30025A758 /* Info.plist */,
 				9611DBD5267CF8B30025A758 /* LaunchScreen.storyboard */,
 				96D2EDE7267CFF3A00DF5375 /* Base */,
+				9625671C267F36B700DA8901 /* Coordinators */,
 				96D2EE14267D337200DF5375 /* Entities */,
 				96D2EE01267D260500DF5375 /* Networking */,
 				9611DBE3267CFB8C0025A758 /* Resources */,
@@ -108,6 +116,48 @@
 				9611DBD3267CF8B30025A758 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9625671C267F36B700DA8901 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9625671D267F36FD00DA8901 /* Protocols */,
+				96256721267F37E100DA8901 /* NoteBookCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		9625671D267F36FD00DA8901 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9625671E267F371400DA8901 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9625672B267F444000DA8901 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96D2EE30267D3C7800DF5375 /* NotebookViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9625672C267F444600DA8901 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				96D2EE2F267D3C7800DF5375 /* NotebookViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9625672E267F444B00DA8901 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96D2EE2E267D3C7800DF5375 /* NotebookContentView.swift */,
+				96D2EE31267D3C7800DF5375 /* NotebookContentView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		96D2EDE7267CFF3A00DF5375 /* Base */ = {
@@ -141,10 +191,9 @@
 		96D2EDFA267D21DD00DF5375 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				96D2EE2E267D3C7800DF5375 /* NoteBookContentView.swift */,
-				96D2EE2F267D3C7800DF5375 /* NoteBookViewPresenter.swift */,
-				96D2EE30267D3C7800DF5375 /* NoteBookViewController.swift */,
-				96D2EE31267D3C7800DF5375 /* NoteBookContentView.xib */,
+				9625672B267F444000DA8901 /* Controller */,
+				9625672C267F444600DA8901 /* Presenter */,
+				9625672E267F444B00DA8901 /* View */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -286,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9611DBD7267CF8B30025A758 /* LaunchScreen.storyboard in Resources */,
-				96D2EE35267D3C7800DF5375 /* NoteBookContentView.xib in Resources */,
+				96D2EE35267D3C7800DF5375 /* NotebookContentView.xib in Resources */,
 				9611DBD4267CF8B30025A758 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,19 +389,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D2EE32267D3C7800DF5375 /* NoteBookContentView.swift in Sources */,
-				96D2EE34267D3C7800DF5375 /* NoteBookViewController.swift in Sources */,
+				96D2EE32267D3C7800DF5375 /* NotebookContentView.swift in Sources */,
+				96D2EE34267D3C7800DF5375 /* NotebookViewController.swift in Sources */,
 				96D2EE0B267D2D1600DF5375 /* Networking + Error.swift in Sources */,
 				96D2EDF6267D1DFC00DF5375 /* ViewController.swift in Sources */,
 				96D2EDEE267D00EE00DF5375 /* ViewControllerInterface.swift in Sources */,
-				96D2EE33267D3C7800DF5375 /* NoteBookViewPresenter.swift in Sources */,
+				96D2EE33267D3C7800DF5375 /* NotebookViewPresenter.swift in Sources */,
 				96D2EDEA267CFF5C00DF5375 /* NibViewInterface.swift in Sources */,
+				96256722267F37E100DA8901 /* NoteBookCoordinator.swift in Sources */,
 				96D2EE11267D2E3500DF5375 /* LogService.swift in Sources */,
 				96D2EDF2267D1D8800DF5375 /* NibViewController.swift in Sources */,
 				96D2EE1B267D35F600DF5375 /* NoteBookRouter.swift in Sources */,
 				96D2EE2A267D398600DF5375 /* NetworkingConstants.swift in Sources */,
 				9611DBCB267CF8B30025A758 /* AppDelegate.swift in Sources */,
+				9625671F267F371400DA8901 /* Coordinator.swift in Sources */,
 				96D2EE03267D261700DF5375 /* Networking.swift in Sources */,
+				96256725267F39E300DA8901 /* AppCoordinator.swift in Sources */,
 				96D2EE38267D3D5400DF5375 /* ViewDelegateProtocol.swift in Sources */,
 				96D2EE20267D367800DF5375 /* RouterInterface.swift in Sources */,
 				96D2EE16267D339A00DF5375 /* User.swift in Sources */,
