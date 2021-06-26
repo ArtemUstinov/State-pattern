@@ -9,6 +9,7 @@ protocol NotebookViewPresetnerInterface {
     
     func setupViewDelegate(_ delegate: NotebookViewDelegate)
     func fetchUsers()
+    func refresh()
 }
 
 final class NotebookViewPresenter: NotebookViewPresetnerInterface {
@@ -27,7 +28,7 @@ final class NotebookViewPresenter: NotebookViewPresetnerInterface {
             switch result {
             case .success(let users):
                 self.viewDelegate?.successfulLoadUsers(self, users: users)
-                
+                print("!!! YES")
             case .failure(let error):
                 self.viewDelegate?.displayError(error)
                 LogService.log("Error: \(error). Loc: \(error.localizedDescription)",
@@ -35,5 +36,9 @@ final class NotebookViewPresenter: NotebookViewPresetnerInterface {
                                type: .error)
             }
         }
+    }
+    
+    func refresh() {
+        fetchUsers()
     }
 }

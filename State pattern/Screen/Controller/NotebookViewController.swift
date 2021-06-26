@@ -28,6 +28,45 @@ final class NotebookViewController: NibViewController<NotebookContentView> {
         super.viewDidLoad()
         presenter.setupViewDelegate(self)
         presenter.fetchUsers()
+        setPullToRefresh()
+        setupNavBar()
+    }
+    
+    //MARK: - Private methods:
+    private func setupNavBar() {
+        title = "Users"
+        
+        let clearAllBarButton: UIBarButtonItem = .init(title: "Clear all",
+                                                       style: .done,
+                                                       target: self,
+                                                       action: #selector(handleClearAllBarButton))
+        
+        clearAllBarButton.tintColor = .red
+        navigationItem.rightBarButtonItem = clearAllBarButton
+    }
+    
+    private func setPullToRefresh() {
+        contentView.tableView.refreshControl = UIRefreshControl()
+        contentView.tableView.refreshControl?.addTarget(self,
+                                                        action: #selector(handlePullToRefresh),
+                                                        for: .valueChanged)
+    }
+    
+    private func endRefreshing() {
+        guard contentView.tableView.refreshControl?.isRefreshing ?? false else { return }
+        contentView.tableView.refreshControl?.endRefreshing()
+    }
+    
+    //MARK: - @Objc methods:
+    @objc private func handlePullToRefresh(control: UIRefreshControl) {
+        control.beginRefreshing()
+        presenter.refresh()
+    }
+    
+    @objc private func handleClearAllBarButton(sender: UIBarButtonItem) {
+        let kind: State.Kind = .empty
+        state = State.transitionToState(kind, viewController: self)
+        self.state.enter()
     }
 }
 
@@ -64,6 +103,15 @@ extension NotebookViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell(style: .default, reuseIdentifier: nil)
         }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch state {
+        case is ShowingDataState:
+            return 80
+        default:
+            return tableView.bounds.height
+        }
+    }
 }
 
 //MARK: - NotebookViewDelegate:
@@ -74,9 +122,14 @@ extension NotebookViewController: NotebookViewDelegate {
         let kind: State.Kind = users.isEmpty ? .empty : .showingData(users)
         state = State.transitionToState(kind, viewController: self)
         self.state.enter()
+        endRefreshing()
     }
     
-    func displayError(_ error: Error) {
+    func displayError(_ error: Networking.Error) {
+        contentView.activityIndicator.stopAnimating()
+        let kind: State.Kind = .error(error)
+        state = State.transitionToState(kind, viewController: self)
+        self.state.enter()
         let alertController = AlertControllerFactory.controller(ofType: .error(error: error))
         present(alertController, animated: true)
     }
