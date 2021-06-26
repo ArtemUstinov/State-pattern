@@ -6,17 +6,15 @@
 //
 
 protocol NotebookViewPresetnerInterface {
-    var users: [User] { get }
     
     func setupViewDelegate(_ delegate: NotebookViewDelegate)
+    func fetchUsers()
+    func refresh()
 }
 
 final class NotebookViewPresenter: NotebookViewPresetnerInterface {
     
     private weak var viewDelegate: NotebookViewDelegate?
-    
-    //MARK: - Public properties:
-    var users: [User] = []
     
     //MARK: - Public methods:
     func setupViewDelegate(_ delegate: NotebookViewDelegate) {
@@ -29,9 +27,8 @@ final class NotebookViewPresenter: NotebookViewPresetnerInterface {
         Networking.request(request) { (result: Result<[User], Networking.Error>) in
             switch result {
             case .success(let users):
-                self.users = users
-                self.viewDelegate?.successfulLoadUsers(self, users: self.users)
-                
+                self.viewDelegate?.successfulLoadUsers(self, users: users)
+                print("!!! YES")
             case .failure(let error):
                 self.viewDelegate?.displayError(error)
                 LogService.log("Error: \(error). Loc: \(error.localizedDescription)",
@@ -39,5 +36,9 @@ final class NotebookViewPresenter: NotebookViewPresetnerInterface {
                                type: .error)
             }
         }
+    }
+    
+    func refresh() {
+        fetchUsers()
     }
 }

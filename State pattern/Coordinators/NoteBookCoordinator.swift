@@ -18,10 +18,6 @@ final class NotebookCoordinator: Coordinator, NotebookCoordinatorInterface {
     var window: UIWindow
     var rootViewController: UINavigationController
     
-    var navigationController: UINavigationController {
-        return rootViewController
-    }
-    
     //MARK: - Initializers:
     init(window: UIWindow) {
         self.window = window
