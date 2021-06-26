@@ -35,6 +35,9 @@ final class NotebookContentView: UIView, NibViewInterface, NotebookContentViewIn
     
     //MARK: - Private methods:
     func setupTableView() {
-//        tableView.register(<#T##cellType: UITableViewCell.Type##UITableViewCell.Type#>)
+        tableView.register(BasicNotebookTableViewCell.self)
+        tableView.register(EmptyStateNotebookTableViewCell.self)
+        tableView.register(ErrorStateNotebookTableViewCell.self)
+        tableView.register(LoadingStateNotebookTableViewCell.self)
     }
 }

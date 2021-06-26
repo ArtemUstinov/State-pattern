@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct BasicNotebookCellConfigurator<Model> {
+protocol BasicNotebookCellConfiguratorInterface {
+    associatedtype Model
+    
+    var nameLabelKeyPath: KeyPath<Model, String?> { get }
+    var usernameLabelKeyPath: KeyPath<Model, String?> { get }
+    
+    func configure(_ cell: BasicNotebookTableViewCellInterface, for model: Model)
+}
+
+struct BasicNotebookCellConfigurator<Model>: BasicNotebookCellConfiguratorInterface {
     
     //MARK: - Public properties:
     var nameLabelKeyPath: KeyPath<Model, String?>

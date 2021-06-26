@@ -25,7 +25,7 @@ extension NotebookViewController {
             self.viewController = viewController
         }
         
-        static func state(_ kind: Kind, viewController: NotebookViewController) -> State {
+        static func transitionToState(_ kind: Kind, viewController: NotebookViewController) -> State {
             switch kind {
             case .empty:
                 return EmptyState(viewController: viewController)
